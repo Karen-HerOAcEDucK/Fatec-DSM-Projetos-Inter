@@ -1,8 +1,0 @@
-Ideia 02 - P.I. - 2° Semestre:
-
-Aplicação da qual como objetivo ajudar pessoas com doenças como diabetes, anemia e outras.
-Tem como objetivo ajudar nos alimentos dos quais devem ser evitados durante o tratamento dessas doenças e também para ajudar essas pessoas em suas refeições diarias.
-
-O aplicativo também pode ser utilziado por aqueles que tenham a ideia de ter uma alimentação mais saudaveis contendo dicas de alimentação para qualquer pessoa que utilize a aplicação.
-
-Publico alvo seriam pessoas em tratamento de doenças como diabetes e anemia.
