@@ -1,13 +1,13 @@
 # Fatec-DSM-Projetos-Inter
 
-<h1>Project Name </h1>
+# Project Name
 
-Projeto Integrador 2º semestre Desenvolvimento de Software Fatec Araras
+Projeto interdisciplinar do 2° semestre de Desenvolvimento de Software Multiplataforma da Fatec Araras.
 
-<h2>⚔️ <em>SOBRE</em> ⚔️ </h2>
-<p> O projeto tem como ideia ajudar as pessoas que sofrem de doenças alimentares princialmente a Diabetes</p>
+### 🗡 Sobre:
 
-* #### :
-    <p>Nossa aplicação é totalmente WEB facilitando o acesso para o usuario de qualquer lugar onde ele possua internet.</p>
+Nosso projeto se trata de um aplicação WEB para auxiliar pessoas com problema de Diabetes. 
 
-    <p></p>
+
+* #### 🖥 Monitoramento:
+    * Auxiliar no monitoramento diario da Glicose.
