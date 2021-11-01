@@ -10,4 +10,4 @@ Nosso projeto se trata de um aplicação WEB para auxiliar pessoas com problema 
 
 
 * #### 🖥 Monitoramento:
-    * Auxiliar no monitoramento diario da Glicose.
+    * Auxiliar no monitoramento diario da Glicose..
