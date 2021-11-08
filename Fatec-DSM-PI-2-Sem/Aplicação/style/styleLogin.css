@@ -1,0 +1,85 @@
+body{
+   background:url(./images/fundoLogin1.jpg) no-repeat center fixed;
+   background-size: cover;
+}
+
+/*Tela de Login*/
+
+.general{
+   max-width: 430px;
+   background: #fff;
+   height: 100vh; /*vh = Viewport Height, ou seja Altura da Janela*/
+}
+
+.generalLogin{
+   text-align: center;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: -60px;
+}
+
+.generalForms{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 40px;
+}
+
+.textHeader,h2{
+   font-size: 28px;
+}
+
+.imageHeader{
+   margin-bottom: 20px;
+}
+
+.inputDiv{
+   width: 300px;
+   justify-content: center;
+}
+
+.inputCod{
+   background: rgb(243, 244, 253);
+   border: 1px solid rgb(96, 116, 231);
+   border-radius: 5px 5px 5px 5px;
+   font-weight: 200;
+   font-size: 15px;
+   padding: 8px 10px 8px 10px;
+   margin-bottom: 20px;
+}
+
+.inputPass{
+   background: rgb(243, 244, 253);
+   border: 1px solid rgb(96, 116, 231);
+   border-radius: 5px 5px 5px 5px;
+   font-weight: 200;
+   font-size: 15px;
+   padding: 8px 10px 8px 10px;
+}
+
+.buttonEnter{
+   width: 300px;
+   border-radius: 5px 5px 5px 5px;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 700;
+   background: rgb(34, 64, 233);
+}
+
+.teste{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-end;
+   margin-bottom: 20px;
+   margin-top: -20px;
+}
+
+.teste, a{
+   text-decoration: underline;
+   color: rgb(62, 71, 190);
+}
