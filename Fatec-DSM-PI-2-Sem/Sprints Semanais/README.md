@@ -14,3 +14,4 @@ As sprints semanais acontecem para atualização da equipe em relação as ativi
 |   4    | 27/10/2021 | Atualização do repositorio Github do projeto.                                                            |
 |   5    | 28/10/2021 | Reunião para levantamento da particularidade do projeto e andamento da atividades indivuduais da equipe. |
 |   6    | 30/10/2021 | Atualização da documentação devido as mudanças do projeto.                                               |
+|   7    | 01/11/2021 | Definimos que esboçariamos os primeiras ideias paras telas seguindo a prototipagem    
