@@ -16,3 +16,4 @@ As sprints semanais acontecem para atualização da equipe em relação as ativi
 |   6    | 30/10/2021 | Atualização da documentação devido as mudanças do projeto.                                               |
 |   7    | 01/11/2021 | Definimos que esboçariamos os primeiras ideias paras telas seguindo a prototipagem                       |
 |   8    | 02/11/2021 | Apresentação dos primeiros esboços                                                                       |
+|   9    | 04/11/2021 | Discussão de alguns pontos na questão de Layout dos primeiros esboços.                                   |
