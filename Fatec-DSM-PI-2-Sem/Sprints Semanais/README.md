@@ -17,3 +17,8 @@ As sprints semanais acontecem para atualização da equipe em relação as ativi
 |   7    | 01/11/2021 | Definimos que esboçariamos os primeiras ideias paras telas seguindo a prototipagem                       |
 |   8    | 02/11/2021 | Apresentação dos primeiros esboços                                                                       |
 |   9    | 04/11/2021 | Discussão de alguns pontos na questão de Layout dos primeiros esboços.                                   |
+|   10   | 06/11/2021 | Modelagem de Banco de Dados.                                                                             |
+|   11   | 08/11/2021 | Modelagem do Modelo de Banco de Dados Relacional e Script  e Codificação da Aplicação Web em PHP.        |
+|   12   | 09/11/2021 | Conexão com banco de dados com aplicação web.                                                            |
+
+
