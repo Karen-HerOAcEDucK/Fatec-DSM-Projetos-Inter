@@ -30,15 +30,15 @@
                
                <!-- Inputs do Forms -->
                <div class="generalForms">
-                  <form action="index.php" method="post">
+                  <form action="Cadastrar.php" method="post" name="form1">
                      <div class="row teste">
                         <div class="col">
                            <div class="input-group flex-nowrap inputDiv">
-                              <input type="text" name="name" class="form-control inputCod" value="<?php echo $nome; ?>" placeholder="Nome de usuario"/>
+                              <input type="text" name="nome" class="form-control inputCod" placeholder="Nome de usuario"/>
                            </div>
                               
                            <div class="input-group flex-nowrap inputDiv">
-                              <input type="text" name="name" class="form-control inputCod" placeholder="Sobrenome"/>
+                              <input type="text" name="sobrenome" class="form-control inputCod" placeholder="Sobrenome"/>
                            </div>
                               
                            <div class="input-group flex-nowrap inputDiv">
@@ -51,7 +51,7 @@
                         </div>
                      </div>
                      <div class="buttonForms">
-                        <button type="submit" class="btn buttonEnter">Entrar</button>
+                        <button type="submit" name="submit" class="btn buttonEnter">Entrar</button>
                      </div>
                   </form>
                </div> 
@@ -61,30 +61,19 @@
    </body>
 </html>
 
-
 <?php
-    
-    $nome = $cpf = $senha = $sobrenome = "";
+   include_once("../app/Database.php");
 
-    if($_POST) {
-        $senha          = $_POST['senha'];
-        $senhaConfirma  = $_POST['senha_confirma'];
-        if ($senha == "") {
-            $mensagem = "<span class='aviso'><b>Aviso</b>: Senha não foi alterada!</span>";
-        } else if ($senha == $senhaConfirma) {
-            $mensagem = "<span class='sucesso'><b>Sucesso</b>: As senhas são iguais: ".$senha."</span>";
-        } else {
-            $mensagem = "<span class='erro'><b>Erro</b>: As senhas não conferem!</span>";
-        }
-        echo "<p id='mensagem'>".$mensagem."</p>";
+   $database = new Database();
 
-        $nome = $_POST['name'];
-        $cpf = $_POST[''];
-        $sobrenome = $_POST['']
-
-
-    }
-
-    $sql = "INSERT INTO pessoa ("Nome","Sobrenome", "CPF") VALUES ($nome,$sobrenome,$cpf)";
-
+   if(isset($_POST["submit"])){
+      $nome = $_POST["nome"];
+      $sobrenome = $_POST["sobrenome"];
+      $senha = $_POST["senha"];
+      
+      $query = "INSERT INTO pessoa(Nome, Sobrenome, senha) VALUES ('$nome', '$sobrenome', '$senha')";
+      $database->execute($query);
+      header("Location: index.php");
+   }
 ?>
+

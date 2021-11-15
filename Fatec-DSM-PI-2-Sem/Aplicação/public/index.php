@@ -1,3 +1,29 @@
+<?php
+   include_once("../app/Database.php");
+
+   $database = new Database();
+   
+   if($_SERVER["REQUEST_METHOD"] == "POST"){
+      session_start();
+      
+      $nome = $_POST['nome'];
+      $senha = $_POST['senha'];
+      
+      $query = "SELECT Nome, senha from pessoa WHERE Nome = '$nome' AND senha = '$senha'";
+      $response = $database->get($query);
+      
+      if($response){
+         $_SESSION['loggedin'] = TRUE;
+         $_SESSION["nome"] = $nome;
+         header("location: home.php");
+      } else {
+         $_SESSION['loggedin'] = FALSE;
+      }
+      
+   }
+?>
+
+
 <!doctype html>
 <html lang="en">
    <head>
@@ -34,7 +60,7 @@
                      <div class="row teste">
                         <div class="col">
                            <div class="input-group flex-nowrap inputDiv">
-                              <input type="text" name="nickname" class="form-control inputCod" placeholder="Nome"/>
+                              <input type="text" name="nome" class="form-control inputCod" placeholder="Nome"/>
                            </div>
                               
                            <div class="input-group flex-nowrap inputDiv">
