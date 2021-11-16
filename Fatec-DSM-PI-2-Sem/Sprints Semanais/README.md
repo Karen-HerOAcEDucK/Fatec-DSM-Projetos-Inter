@@ -23,7 +23,7 @@ As sprints semanais acontecem para atualização da equipe em relação as ativi
 |   11   | 08/11/2021 | Modelagem do Modelo de Banco de Dados Relacional e Script.                                               |
 |        |            | Codifiação da Aplicação Web em PHP.                                                                      |
 |   12   | 09/11/2021 | Conexão com banco de dados com aplicação web.                                                            |
-|   13   | 11/11/2021 | Finalização da conecção com o banco de dados.                                                            |
+|   13   | 11/11/2021 | Finalização da conexão com o banco de dados.                                                            |
 |        |            | Definição das atividades relacionadas a Engenharia de Software.                                          |
 |   14   | 13/11/2021 | Construção dos diagramas de Classe.                                                                      |
 
