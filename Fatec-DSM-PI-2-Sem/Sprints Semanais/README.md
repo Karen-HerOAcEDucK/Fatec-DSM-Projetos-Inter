@@ -30,3 +30,4 @@ As sprints semanais acontecem para atualização da equipe em relação as ativi
 |        |            | Correção do repositorio Git,                                                                             |
 |        |            | Validação dos diagramas de classe.                                                                       |
 |   16   | 18/11/2021 | Codificação da aplicação web                                                                             |
+|   17   | 20/11/2021 | Finalizando Documentação                                                                                 |
