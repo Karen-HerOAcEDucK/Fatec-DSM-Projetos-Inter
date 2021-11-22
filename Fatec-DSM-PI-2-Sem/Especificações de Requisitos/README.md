@@ -1,2 +1,0 @@
-# Fatec-DSM-Projetos-Inter
-
