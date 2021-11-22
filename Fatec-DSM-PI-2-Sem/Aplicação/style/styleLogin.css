@@ -6,7 +6,7 @@ body{
 /*Tela de Login*/
 
 .general{
-   max-width: 430px;
+   max-width: 465px;
    background: #fff;
    height: 100vh; /*vh = Viewport Height, ou seja Altura da Janela*/
 }
@@ -70,16 +70,20 @@ body{
    background: rgb(34, 64, 233);
 }
 
-.teste{
+.inputs{
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
    align-items: flex-end;
-   margin-bottom: 20px;
    margin-top: -20px;
 }
 
 .teste, a{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-end;
+   margin-bottom: 15px;
    text-decoration: underline;
    color: rgb(62, 71, 190);
 }

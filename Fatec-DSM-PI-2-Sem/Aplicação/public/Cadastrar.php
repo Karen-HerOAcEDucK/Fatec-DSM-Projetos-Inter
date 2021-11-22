@@ -42,6 +42,10 @@
                            </div>
                               
                            <div class="input-group flex-nowrap inputDiv">
+                              <input type="text" name="email" class="form-control inputCod" placeholder="Email"/>
+                           </div>
+                              
+                           <div class="input-group flex-nowrap inputDiv">
                               <input type="password" name="senha" class="form-control inputPass" placeholder="Senha"/>
                            </div>
                               
@@ -63,17 +67,18 @@
 
 <?php
    include_once("../app/Database.php");
-
+   
    $database = new Database();
-
+   
    if(isset($_POST["submit"])){
       $nome = $_POST["nome"];
       $sobrenome = $_POST["sobrenome"];
       $senha = $_POST["senha"];
+      $email = $_POST["email"];
       
-      $query = "INSERT INTO pessoa(Nome, Sobrenome, senha) VALUES ('$nome', '$sobrenome', '$senha')";
+      //Função MD5 para fazer a cripitografia da senha do usuario
+      $query = "INSERT INTO teste (nome, sobrenome, senha, email) VALUES ('$nome', '$sobrenome', MD5('$senha'), '$email')";
       $database->execute($query);
       header("Location: index.php");
    }
 ?>
-

@@ -1,10 +1,10 @@
 <?php
-class Connection 
-{	
+class Connection{
+	
 	private $_host = 'localhost';
 	private $_username = 'root';
 	private $_password = '';
-	private $_database = 'monitora_glicemia';
+	private $_database = 'diabetesbd';
 	
 	protected $connection;
 	
@@ -17,19 +17,10 @@ class Connection
 			if (!$this->connection) {
 				echo 'Cannot connect to database server';
 				exit;
-			}			
+			}
 		}	
 		
 		return $this->connection;
 	}
 }
-
-/*
-$link = mysql_connect('localhost', 'root', '');
-if (!$link) {
-    die('Não é possível conectar: ' . mysql_error());
-}
-echo 'Conexão bem sucedida';
-*/
-// monitoria_glicemia
 ?>
