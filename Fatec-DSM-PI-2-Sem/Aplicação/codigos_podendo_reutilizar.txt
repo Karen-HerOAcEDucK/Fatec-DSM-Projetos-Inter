@@ -1,0 +1,55 @@
+Tela da Cadastro:
+
+include_once("../app/testeConect.php");
+   
+   // $database = new Database();
+   
+  // if(isset($_POST["Submit"])){
+      $name = $_POST["name"];
+      $sobrenome = $_POST["sobrenome"];
+      $senha = $_POST["senha"];
+      $senhaConfirma  = $_POST['senha_confirma'];
+         if($senha == $senhaConfirma){
+            echo "Senhas diferentes.";
+         }else{
+
+         $sql = "INSERT INTO teste (nome, sobrenome, senha, senhaConfirma) VALUES ('$name', '$sobrenome', '$senha', '$senhaConfirma')";
+         if(mysqli_query($conexao, $sql)){
+            echo "Usuario cadastrado";
+         }else{
+            echo "erro".mysqli_connect_error($conexao);
+         }
+         mysqli_close($conexao);
+       }
+      // $query = "INSERT INTO teste (nome, sobrenome, senha, senhaConfirma) VALUES ('$name', '$sobrenome', '$senha', '$senhaConfirma')";
+      // $database->execute($query);
+      
+      //header("Location: index.php");
+
+      // if ($senha == "") {
+      //    $mensagem = "<span class='aviso'><b>Aviso</b>: Senha não foi alterada!</span>";
+      // } else if ($senha == $senhaConfirma) {
+      //    $mensagem = "<span class='sucesso'><b>Sucesso</b>: As senhas são iguais: ".$senha."</span>";
+      // } else {
+      //    $mensagem = "<span class='erro'><b>Erro</b>: As senhas não conferem!</span>";
+      // }
+      // echo "<p id='mensagem'>".$mensagem."</p>";
+   //}
+
+   // //Validação dos campos de senha
+   // if(isset($_POST["Submit"])) {
+   //    //$senha          = $_POST['senha'];
+   //    //$senhaConfirma  = $_POST['senha_confirma'];
+   //    if ($senha == "") {
+   //       $mensagem = "<span class='aviso'><b>Aviso</b>: Senha não foi alterada!</span>";
+   //    } else if ($senha == $senhaConfirma) {
+   //       $mensagem = "<span class='sucesso'><b>Sucesso</b>: As senhas são iguais: ".$senha."</span>";
+   //    } else {
+   //       $mensagem = "<span class='erro'><b>Erro</b>: As senhas não conferem!</span>";
+   //    }
+   //    echo "<p id='mensagem'>".$mensagem."</p>";
+      
+   // }
+   // $sql = "INSERT INTO pessoa ("Nome","Sobrenome", "CPF") VALUES ($nome,$sobrenome,$cpf)";
+
+/***************************************************************************************************************************************************************************/
