@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
    <head>
       <!-- Required meta tags -->
       <meta charset="utf-8">
@@ -50,7 +50,7 @@
                         <button type="submit" class="btn buttonEnter">Entrar</button>
                      </div>
                   </form>
-               </div> 
+               </div>
             </div>
          </div>
       </div>

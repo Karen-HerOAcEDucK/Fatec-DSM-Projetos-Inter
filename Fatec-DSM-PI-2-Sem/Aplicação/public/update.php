@@ -1,5 +1,23 @@
+<?php
+   include_once("../app/Database.php");
+   $database = new Database();
+   session_start();
+   
+   $nome = $_SESSION["nome"];
+   $query = "SELECT *FROM pessoa AS p WHERE nome = '$nome'";
+   $result = $database->get($query);
+   
+   foreach($result as $item){
+      $nome = $item['nome'];
+      $sobrenome = $item['sobrenome'];
+      $email = $item['email'];
+      $senha = $item['senha'];
+   }
+?>
+
+
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
    <head>
       <!-- Required meta tags -->
       <meta charset="utf-8">
@@ -24,7 +42,7 @@
                   </div>
                      
                   <div class="textHeader">
-                     <h2>Cadastro</h2>
+                     <h2>Alteração de Perfil</h2>
                   </div>
                </div>
                
@@ -34,23 +52,23 @@
                      <div class="row teste">
                         <div class="col">
                            <div class="input-group flex-nowrap inputDiv">
-                              <input type="text" name="nome" class="form-control inputCod" placeholder="Nome de usuario"/>
+                              <input type="text" name="nome" class="form-control inputCod" placeholder="Nome de usuario" value="<?php echo $nome?>"/>
                            </div>
                               
                            <div class="input-group flex-nowrap inputDiv">
-                              <input type="text" name="sobrenome" class="form-control inputCod" placeholder="Sobrenome"/>
+                              <input type="text" name="sobrenome" class="form-control inputCod" placeholder="Sobrenome" value="<?php echo $sobrenome?>"/>
                            </div>
                               
                            <div class="input-group flex-nowrap inputDiv">
-                              <input type="text" name="email" class="form-control inputCod" placeholder="Email"/>
+                              <input type="text" name="email" class="form-control inputCod" placeholder="Email" value="<?php echo $email?>"/>
                            </div>
                               
                            <div class="input-group flex-nowrap inputDiv">
-                              <input type="password" name="senha" class="form-control inputPass" placeholder="Senha"/>
+                              <input type="password" name="senha" class="form-control inputPass" placeholder="Senha" value="<?php echo $senha?>"/>
                            </div>
                               
                            <div class="input-group flex-nowrap inputDiv">
-                              <input type="password" name="senha_confirma" class="form-control inputPass" placeholder="Confirmar Senha"/>
+                              <input type="password" name="senha_confirma" class="form-control inputPass" placeholder="Confirmar Senha" value="<?php echo $senha?>"/>
                            </div>
                         </div>
                      </div>
@@ -64,21 +82,3 @@
       </div>
    </body>
 </html>
-
-<?php
-   include_once("../app/Database.php");
-   
-   $database = new Database();   
-   
-   if(isset($_POST["submit"])){
-      $nome = $_POST["nome"];
-      $sobrenome = $_POST["sobrenome"];
-      $senha = $_POST["senha"];
-      $email = $_POST["email"];
-      
-      //Função MD5 para fazer a cripitografia da senha do usuario
-      $query = "INSERT INTO pessoa (nome, sobrenome, senha, email) VALUES ('$nome', '$sobrenome', MD5('$senha'), '$email')";
-      $database->execute($query);
-      header("Location: index.php");
-   }
-?>

@@ -10,7 +10,7 @@
       $senha = $_POST['senha'];
       
       //Função MD5 do banco de daos para fazer a desencripitação da senha do usuario no banco de dados
-      $query = "SELECT nome, senha, id from teste WHERE nome = '$nome' AND senha = MD5('$senha')";
+      $query = "SELECT nome, senha, id from pessoa WHERE nome = '$nome' AND senha = MD5('$senha')";
       $response = $database->get($query);
       
       if($response){
