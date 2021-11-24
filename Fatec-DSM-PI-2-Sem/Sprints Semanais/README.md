@@ -31,3 +31,7 @@ As sprints semanais acontecem para atualização da equipe em relação as ativi
 |        |            | Validação dos diagramas de classe.                                                                       |
 |   16   | 18/11/2021 | Codificação da aplicação web                                                                             |
 |   17   | 20/11/2021 | Finalizando Documentação                                                                                 |
+|   18   | 21/11/2021 | Trabalho de design do logotipo.                                                                          |
+|   19   | 22/11/2021 | Finalização da codificação Front -End.                                                                   |
+|        |            | Finalização do Logotipo.                                                                                 | 
+|        |            | Últimas alterações da Documentação (Inclusão dos Mecanismo de teste de software)                         |
